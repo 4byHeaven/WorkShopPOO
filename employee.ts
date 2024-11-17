@@ -9,8 +9,12 @@ class Employeee extends Person {
         this.salary = salary;
     }
 
+    saludar(): void {
+        console.log(`Hola, mi nombre es ${this.name}, tu edad es ${this.getage()} y el salario es de ${this.salary}.`);
+    }
+
     trabajar(hours: number): void {
-        console.log(`Empleado: Trabajando ${hours} horas al día.`);
+        console.log(`Trabaja ${hours} horas al día.`);
     }
 }
 
