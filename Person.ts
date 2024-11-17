@@ -5,10 +5,11 @@ export class Person {
 
     constructor(name: string, age: number) {
 
-    this.name = name
-    this.age = age
+        this.name = name
+        this.age = age
 
     }
+
     saludar(): void {
         console.log(`Hola, mi nombre es ${this.name} y tengo ${this.age} años`);
 
@@ -17,6 +18,7 @@ export class Person {
     getage(): number {
         return this.age;
     }
-    
+
 
 }
+
