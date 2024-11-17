@@ -1,19 +1,17 @@
 export class Person {
 
-    nombre: string
-    private edad: number
+    name: string
+    private age: number
 
-    constructor(nombre: string, edad: number) {
+    constructor(name: string, age: number) {
 
-    this.nombre = nombre
-    this.edad = edad
+    this.name = name
+    this.age = age
 
     }
     saludar(): void {
-        console.log(`Hola, mi nombre es ${this.getedad()} y tengo ${this.edad} años`);
+        console.log(`Hola, mi nombre es ${this.name} y tengo ${this.age} años`);
+
     }
 
-    getedad():number { 
-        return this.edad;
-    }
 }
