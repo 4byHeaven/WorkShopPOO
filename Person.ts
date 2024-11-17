@@ -14,4 +14,9 @@ export class Person {
 
     }
 
+    getage(): number {
+        return this.age;
+    }
+    
+
 }
