@@ -1,18 +1,37 @@
 import { Person } from "./Person.ts"
+import { Direccion } from "./Direccion.ts"
 
-const persons: Person[] =[
 
-new Person("Jorge", 23),
-new Person("Jaime", 19),
-new Person("Gabriel", 25),
-new Person("Yeffrey", 28),
-new Person("Marta", 32),
-new Person("German", 41),
-new Person("Moe", 21),
-new Person("Duvan", 27),
-new Person("Argen", 23),
-new Person("Santiago", 20),  
+
+const direcciones: Direccion[] = [
+    { calle: "Calle 123", ciudad: "Ciudad 1", pais: "Argentina" },
+    { calle: "Calle 456", ciudad: "Ciudad 2", pais: "Chile" },
+    { calle: "Calle 789", ciudad: "Ciudad 3", pais: "Colombia" },
+    { calle: "Calle 1111", ciudad: "Ciudad 4", pais: "Perú" },
+    { calle: "Calle 1234", ciudad: "Ciudad 5", pais: "México" },
+    { calle: "Calle 789", ciudad: "Ciudad 6", pais: "Guatemala" },
+    { calle: "Calle 1705", ciudad: "Ciudad 7", pais: "Honduras" },
+    { calle: "Calle 789", ciudad: "Ciudad 8", pais: "Cuba" },
+    { calle: "Calle 356", ciudad: "Ciudad 9", pais: "Jamaica" },
+    { calle: "Calle 8009", ciudad: "Ciudad 10", pais: "España" },
+];
+
+const persons: Person[] = [
+
+    new Person("Jorge", 23, direcciones[0]),
+    new Person("Jaime", 19, direcciones[1]),
+    new Person("Gabriel", 25, direcciones[2]),
+    new Person("Yeffrey", 28, direcciones[3]),
+    new Person("Marta", 32, direcciones[4]),
+    new Person("German", 41, direcciones[5]),
+    new Person("Moe", 21, direcciones[6]),
+    new Person("Duvan", 27, direcciones[7]),
+    new Person("Argen", 23, direcciones[8]),
+    new Person("Santiago", 20, direcciones[9]),
 
 ];
 
-persons.forEach((Person => Person.saludar()));
+persons.forEach(Person => {
+    Person.saludar();
+    console.log(`ciudad: ${Person.direccion.ciudad}`);
+});

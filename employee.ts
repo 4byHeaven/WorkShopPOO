@@ -1,10 +1,11 @@
 
 import { Person } from "./Person.ts";
+import { Direccion } from "./Direccion.ts";
 
 export class Employee extends Person {
     salary: number;
-    constructor(nombre: string, edad: number, salary: number) {
-        super(nombre, edad);
+    constructor(name: string, age: number, salary: number, direccion: Direccion) {
+        super(name, age, direccion);
         this.salary = salary;
     }
 

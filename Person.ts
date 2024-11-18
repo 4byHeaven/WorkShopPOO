@@ -1,13 +1,15 @@
+import { Direccion } from "./Direccion.ts"
 export class Person {
 
     name: string
     private age: number
+    direccion: Direccion
 
-    constructor(name: string, age: number) {
+    constructor(name: string, age: number, direccion: Direccion) {
 
         this.name = name
         this.age = age
-
+        this.direccion = direccion
     }
 
     saludar(): void {
