@@ -1,5 +1,5 @@
 
-abstract class Vehiculo {
+export abstract class Vehiculo {
     marca: string;
 
     constructor(marca: string) {
