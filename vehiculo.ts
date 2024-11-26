@@ -1,23 +1,17 @@
 
 export abstract class Vehiculo {
-    marca: string;
 
-    constructor(marca: string) {
-        this.marca = marca;
-    }
-
-  
     abstract arrancar(): void;
 }
 
-class Coche extends Vehiculo {
+export class Coche extends Vehiculo {
     arrancar(): void {
-        console.log(`El coche de marca ${this.marca} está arrancando con llave.`);
+        console.log(`El coche está arrancando con llave.`);
     }
 }
 
-class Moto extends Vehiculo {
+export class Moto extends Vehiculo {
     arrancar(): void {
-        console.log(`La moto de marca ${this.marca} está arrancando con botón de encendido.`);
+        console.log(`La moto de marca está arrancando con botón de encendido.`);
     }
 }
