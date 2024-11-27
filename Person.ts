@@ -1,19 +1,21 @@
 import { Vehiculo } from "./vehiculo.ts"
 import { Direccion } from "./Direccion.ts"
+import { EstadoCivil } from "./EstadoCivil.ts"
 export class Person {
 
     name: string
     private age: number
     direccion: Direccion
     Vehiculos:Vehiculo[]
+    estadoCivil: EstadoCivil
 
 
-    constructor(name: string, age: number, direccion: Direccion) {
+    constructor(name: string, age: number, direccion: Direccion, estadoCivil: EstadoCivil) {
 
         this.name = name
         this.age = age
         this.direccion = direccion
-  
+        this.estadoCivil = estadoCivil
     }
 
     saludar(): void {
