@@ -3,7 +3,7 @@ import { Person } from "./Person.ts"
 
 // Función flecha que transforma un JSON en una instancia de Person y ejecuta el método saludar
 export const processPersonJson = (objetoJson: any): void => {
-    const personInstance = new Person(objetoJson.name, objetoJson.age, objetoJson.direccion);
+    const personInstance = new Person(objetoJson.name, objetoJson.age, objetoJson.direccion, objetoJson.estadoCivil);
 
     personInstance.saludar();
 };

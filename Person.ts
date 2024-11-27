@@ -6,8 +6,8 @@ export class Person {
     name: string
     private age: number
     direccion: Direccion
-    Vehiculos:Vehiculo[]
-    estadoCivil: EstadoCivil
+    Vehiculos: Vehiculo[]
+    estadocivil: EstadoCivil
 
 
     constructor(name: string, age: number, direccion: Direccion, estadoCivil: EstadoCivil) {
@@ -15,11 +15,11 @@ export class Person {
         this.name = name
         this.age = age
         this.direccion = direccion
-        this.estadoCivil = estadoCivil
+        this.estadocivil = estadoCivil
     }
 
     saludar(): void {
-        console.log(`Hola, mi nombre es ${this.name} y tengo ${this.getage()} años`);
+        console.log(`Hola, mi nombre es ${this.name} y tengo ${this.getage()} años, vivo en ${this.direccion.ciudad}, ${this.direccion.pais}, y mi estado civil es ${this.estadocivil}.`);
     }
 
     getage(): number {

@@ -1,6 +1,6 @@
 import { Person } from "./Person.ts"
 import { Direccion } from "./Direccion.ts"
-
+import { EstadoCivil } from "./EstadoCivil.ts";
 
 
 const direcciones: Direccion[] = [
@@ -18,17 +18,26 @@ const direcciones: Direccion[] = [
 
 const persons: Person[] = [
 
-    new Person("Jorge", 23, direcciones[0]),
-    new Person("Jaime", 19, direcciones[1]),
-    new Person("Gabriel", 25, direcciones[2]),
-    new Person("Yeffrey", 28, direcciones[3]),
-    new Person("Marta", 32, direcciones[4]),
-    new Person("German", 41, direcciones[5]),
-    new Person("Moe", 21, direcciones[6]),
-    new Person("Duvan", 27, direcciones[7]),
-    new Person("Argen", 23, direcciones[8]),
-    new Person("Santiago", 20, direcciones[9]),
-
+    new Person("Jorge", 23, direcciones[0],EstadoCivil.Soltero),
+    new Person("Jaime", 19, direcciones[1],  EstadoCivil.Casado),
+    new Person("Gabriel", 25, direcciones[2],  EstadoCivil.Divorciado),
+    new Person("Yeffrey", 28, direcciones[3], EstadoCivil.Soltero),
+    new Person("Marta", 32, direcciones[4],  EstadoCivil.Casado),
+    new Person("German", 41, direcciones[5], EstadoCivil.Soltero),
+    new Person("Moe", 21, direcciones[6], EstadoCivil.Divorciado),
+    new Person("Duvan", 27, direcciones[7],  EstadoCivil.Casado),
+    new Person("Argen", 23, direcciones[8], EstadoCivil.Soltero),
+    new Person("Santiago", 20, direcciones[9],  EstadoCivil.Divorciado),
+    
+   
+   
+    
+   
+    
+    
+   
+    
+   
 ];
 
 persons.forEach(Person => {
