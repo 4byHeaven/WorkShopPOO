@@ -28,15 +28,6 @@ const persons: Person[] = [
     new Person("Duvan", 27, direcciones[7],  EstadoCivil.Casado),
     new Person("Argen", 23, direcciones[8], EstadoCivil.Soltero),
     new Person("Santiago", 20, direcciones[9],  EstadoCivil.Divorciado),
-    
-   
-   
-    
-   
-    
-    
-   
-    
    
 ];
 
